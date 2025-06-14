@@ -1,0 +1,191 @@
+html, body {
+  background: #f7f8fb;
+  color: #1c3144;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#login-container, #dashboard {
+  max-width: 480px;
+  margin: 48px auto 0 auto;
+  padding: 20px 0;
+}
+
+#login-container form,
+#order-detail form {
+  background: #fff;
+  padding: 32px 24px 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 3px 18px #0002;
+  max-width: 420px;
+  margin: 36px auto 0 auto;
+}
+
+#login-container h2,
+#order-detail h2 {
+  margin-top: 0;
+  font-size: 1.45em;
+  text-align: center;
+  color: #175383;
+  letter-spacing: 1px;
+}
+
+#login-container label,
+#order-detail label {
+  display: block;
+  margin: 18px 0 10px 0;
+  font-weight: 500;
+  color: #1c3144;
+}
+
+#login-container input,
+#order-detail input,
+#order-detail select,
+#order-detail textarea {
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 8px;
+  border: 1px solid #b6c1cd;
+  padding: 8px 10px;
+  font-size: 1em;
+  transition: border 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#login-container input:focus,
+#order-detail input:focus,
+#order-detail select:focus,
+#order-detail textarea:focus {
+  border-color: #2187e7;
+}
+
+#login-container button[type="submit"],
+#order-detail button[type="submit"],
+#order-detail button[type="button"] {
+  margin: 10px 7px 0 0;
+  padding: 9px 26px;
+  border-radius: 8px;
+  border: none;
+  background: #2187e7;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#login-container button[type="submit"]:hover,
+#order-detail button[type="submit"]:hover,
+#order-detail button[type="button"]:hover {
+  background: #1a5ea0;
+}
+
+#order-detail .lang-switch {
+  text-align: center;
+  margin-top: 12px;
+}
+#order-detail .lang-switch button {
+  background: #fff;
+  color: #2187e7;
+  border: 1px solid #2187e7;
+  padding: 7px 20px;
+  margin: 0 3px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+#order-detail .lang-switch button:disabled {
+  background: #2187e7;
+  color: #fff;
+  cursor: default;
+}
+
+#dashboard h1 {
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  color: #175383;
+  margin-bottom: 8px;
+}
+#new-order-btn {
+  background: #2187e7;
+  color: #fff;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 12px 0 16px 0;
+  cursor: pointer;
+  transition: background 0.14s;
+}
+#new-order-btn:hover {
+  background: #1a5ea0;
+}
+#order-list {
+  margin: 0 0 24px 0;
+  padding: 0;
+  list-style: none;
+}
+#order-list li {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 9px 13px 11px 13px;
+  box-shadow: 0 1px 8px #0001;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#order-list li button {
+  background: #e3e7ee;
+  color: #175383;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 14px;
+  margin-left: 8px;
+  font-size: 0.97em;
+  cursor: pointer;
+  transition: background 0.14s;
+}
+#order-list li button:hover {
+  background: #b5c9e8;
+}
+#logout-btn {
+  background: #eee;
+  color: #d13131;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 36px;
+  padding: 9px 24px;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+#logout-btn:hover {
+  background: #ffe2e2;
+  color: #9a1919;
+}
+.hint {
+  font-size: 0.93em;
+  color: #678;
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #login-container, #dashboard {
+    max-width: 100vw;
+    padding: 0 4vw;
+  }
+  #order-detail form,
+  #login-container form {
+    max-width: 99vw;
+    padding: 14px 4vw;
+  }
+}

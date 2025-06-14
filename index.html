@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konfigurátor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-container">
+    <form id="login-form">
+      <h2 id="login-title">Konfigurátor Login</h2>
+      <label for="username" id="lbl-user">Uživatelské jméno:</label>
+      <input type="text" id="username" name="username" placeholder="Uživatelské jméno" required />
+      <label for="password" id="lbl-pass">Heslo:</label>
+      <input type="password" id="password" name="password" placeholder="Heslo" required />
+      <button type="submit" id="login-btn">Přihlásit</button>
+      <p id="login-error" style="display:none;">Nesprávné jméno nebo heslo!</p>
+      <p class="hint" id="login-hint">Použijte jméno <code>sunset</code> a heslo <code>radim</code>.</p>
+    </form>
+  </div>
+  <div id="dashboard" style="display:none;">
+    <h1 id="orders-title">Objednávky</h1>
+    <button id="new-order-btn">+ Nová objednávka</button>
+    <ul id="order-list"></ul>
+    <div id="order-detail"></div>
+    <button id="logout-btn" style="margin-top:30px;">Odhlásit</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
